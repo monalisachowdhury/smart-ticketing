@@ -7,17 +7,160 @@
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- Tailwild custome classes-->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                 'text-color':'#1DD100',
+                 'coupon-one':'#FFBF0F',
+                 'coupon-two':'#F78C9C',
+             'ticket-section':'#F7F8F8',
+                    'p-color':'rgba(3, 7, 18, 0.6)',
+                       'info':'rgb(247, 248, 248)',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    
+      
+
 
 </head>
 <body>
-    <header>
-
+    <header class="md:container md:mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-3xl font-bold">P-Ticket </a>
+            </div>
+            <div class="flex-none text-p-color">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#1cd1001f] text-text-color">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+          <!-- Banner part-->
+          <div class="hero min-h-screen" style="background-image: url(images/banner.png); width: 1530px; height: 220px;"> 
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-bold">End-to-End Travel with 
+                    <br><span class="text-7xl font-bold text-text-color">P Paribahan</span></h1>
+                <p class="mb-5">Are you planning to go on a tour to Kuakata or Cox’s Bazar? Are you tired of getting the bus tickets from the counter and want a smooth website to purchase tickets online? Through its platform P-Paribohon is giving you the best operator, Shohagh Paribahan Limited, with comfortable bus seats and a luxurious environment.</p>
+                <button class="btn bg-text-color px-6 border-text-color text-black font-bold">Buy Tickes</button>
+              </div>
+            </div>
+          </div>
     </header>
-    <main>
-
+    <main class="">
+        <!-- Coupon section -->
+       <section class="md:container md:mx-auto my-20 items-center">
+        <h1 class="text-4xl font-bold text-center mb-10">Best offers for you</h1>
+        <div class="flex justify-center gap-10">
+            <!-- Coupon 1 -->
+            <div class="flex justify-between w-[573px] h-[220px] bg-coupon-one rounded-xl">
+                <div class="pl-8 py-14 text-center">
+                    <h3 class="text-3xl font-bold">15% OFF</h2>
+                    <p class="font-semibold">On your next purchase</p>
+                    <p>use by February 2024</p>
+                </div>
+                <div><img src="images/cupon-devider.png" alt=""></div>
+                <div class="pr-8 py-14 text-center">
+                    <h3 class="text-3xl font-bold">NEW15</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+            <!-- Coupon 2 -->
+            <div class="flex justify-between w-[573px] h-[220px] rounded-xl bg-coupon-two">
+                <div class="pl-8 py-14 text-center">
+                    <h3 class="text-3xl font-bold">20% OFF</h2>
+                    <p class="font-semibold">On your next purchase</p>
+                    <p>use by February 2024</p>
+                </div>
+                <div><img src="images/cupon-devider.png" alt=""></div>
+                <div class="pr-8 py-14 text-center">
+                    <h3 class="text-3xl font-bold">Couple20</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn bg-white text-text-color border-text-color mt-10">See All Offers</button>
+        </div>
+       </section> 
+       <!-- Tickets section -->
+       <section class="bg-ticket-section border-t-4 border-text-color rounded-t-lg ">
+        <!-- Tickets Price and Boarding point -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold mb-5 pt-10">P.H Paribahan</h1>
+            <p class="text-p-color">Now, Greenline Paribahan is available in Dhaka-Chittagong-Cox’s Bazar, Dhaka-Barisal and Dhaka-Khulna routes through Jatri ticket Website.</p>
+        </div>
+        <!-- Bus info -->
+        <div class="md:container md:mx-auto bg-white rounded-2xl flex">
+            <div class="px-5 py-10">
+                <div class="w-[800px] h-[72px] flex justify-between">
+                    <div class="flex gap-2">
+                        <div>
+                            <img class="w-[68px] h-[48px]" src="images/bus-logo.png" alt="">
+                        </div>
+                       <div>
+                          <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+                          <p class="text-p-color">Coach-009-WEB | AC_Business</p>
+                       </div>
+                    </div>
+                    <div class="w-[150px] h-[45px] py-2 border rounded-xl flex bg-[#1cd1001f] text-text-color gap-1 justify-center"><img class="w-[21px] h-[21px]" src="images/seat-green.png" alt="">
+                        <span>40</span> Seats left</div>
+                </div> 
+                <!-- timeTable -->
+                <div class="w-[800px] h-[200px] bg-info p-[32px] rounded-xl">
+                    <div class="flex justify-between border-b-2 border-dashed mb-4">
+                        <div class="text-p-color">Route</div>
+                        <div class="font-bold">Dhaka-Sylhet</div>
+                    </div>
+                    <div class="flex justify-between border-b-2 border-dashed mb-5">
+                        <div class="text-p-color">Departure Time</div>
+                        <div class="font-bold">9:00 PM</div>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <button class="btn text-p-color">Boarding Point-Laxmipur</button>
+                        <button class="btn text-p-color">Dropping Point-Borgura</button>
+                        <button class="btn text-p-color">Est. Time-11 Hour</button>
+                    </div>
+                  </div> 
+            </div>
+              <!-- info divider -->
+              <div class="pl-10">
+                <img class="w-[80px]" src="images/info-devider.png" alt="">
+              </div>
+              <!-- Ticket Price -->
+              <div class="mx-20 my-20">
+                <img class="" src="images/fare.png" alt="">
+                <h1 class="text-4xl font-bold"><span>550</span> Taka</h1>
+                <p class="text-p-color">Per Seat</p>
+              </div>
+        </div>
+       </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
