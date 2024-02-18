@@ -23,6 +23,7 @@
                  'coupon-two':'#F78C9C',
              'ticket-section':'#F7F8F8',
                     'p-color':'rgba(3, 7, 18, 0.6)',
+                    's-color':'rgba(3, 7, 18, 0.5)',
                        'info':'rgb(247, 248, 248)',
               }
             }
@@ -157,10 +158,170 @@
                 <p class="text-p-color">Per Seat</p>
               </div>
         </div>
+        <!-- Tickes -->
+        <div class="md:container md:mx-auto bg-white mt-10 flex gap-14">
+          <div class="w-[664px] h-[1056px] px-5 py-5 border-r-2 border-dashed">
+            <h1 class="text-xl font-bold border-b-2 border-dashed mb-4 pb-4">Select Your Seat</h1>
+          <div class="flex justify-between">
+            <div class="flex gap-2">
+              <img class="w-[21px] h-[21px]" src="images/seat-gray.png" alt="">
+              <p class="text-p-color">Avilable</p>
+            </div>
+            <div class="flex gap-2">
+              <img class="w-[21px] h-[21px]" src="images/seat-green-filled.png" alt="">
+              <p class="text-text-color">Selected</p>
+            </div>
+          </div>
+          <!-- Seats -->
+          <div>
+            <div class="mt-4 mb-4 w-[80px] h-[56px] ml-[570px]">
+              <button class="btn"><img class="w-[24px] h-[24px]" src="images/wheel.jpeg" alt=""></button>
+            </div>
+            <div class="">
+              <div class="flex justify-between mb-4">
+                <p>A</p>
+                <button class="btn">A1</button>
+                <button class="btn">A2</button>
+                <button class="btn">A3</button>
+                <button class="btn">A4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>B</p>
+                <button class="btn">B1</button>
+                <button class="btn">B2</button>
+                <button class="btn">B3</button>
+                <button class="btn">B4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>C</p>
+                <button class="btn">C1</button>
+                <button class="btn">C2</button>
+                <button class="btn">C3</button>
+                <button class="btn">C4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>D</p>
+                <button class="btn">D1</button>
+                <button class="btn">D2</button>
+                <button class="btn">D3</button>
+                <button class="btn">D4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>E</p>
+                <button class="btn">E1</button>
+                <button class="btn">E2</button>
+                <button class="btn">E3</button>
+                <button class="btn">E4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>F</p>
+                <button class="btn">F1</button>
+                <button class="btn">F2</button>
+                <button class="btn">F3</button>
+                <button class="btn">F4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>G</p>
+                <button class="btn">G1</button>
+                <button class="btn">G2</button>
+                <button class="btn">G3</button>
+                <button class="btn">G4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>H</p>
+                <button class="btn">H1</button>
+                <button class="btn">H2</button>
+                <button class="btn">H3</button>
+                <button class="btn">H4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>I</p>
+                <button class="btn">I1</button>
+                <button class="btn">I2</button>
+                <button class="btn">I3</button>
+                <button class="btn">I4</button>
+              </div>
+              <div class="flex justify-between mb-4">
+                <p>J</p>
+                <button class="btn">J1</button>
+                <button class="btn">J2</button>
+                <button class="btn">J3</button>
+                <button class="btn">J4</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+          <!-- Seat End -->
+          <!-- total price -->
+          <div class="w-[497px] pt-5">
+            <h1 class="text-xl font-bold border-b-2 border-dashed pb-4">Select Your Seat</h1>
+          <div class="w-[433px] h-[335px] px-5 py-5  bg-info mt-5">
+            <div class="flex justify-between border-b-2 border-dashed p-4">
+              <p class="font-bold">Seat <span class="bg-text-color text-white">0</span></p>
+              <p class="font-bold">Class</p>
+              <p class="font-bold">Price</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-p-color">C2</p>
+              <p class="text-p-color">Economy</p>
+              <p class="text-p-color">550</p>
+            </div>
+            <div class="flex justify-between border-b-2 pb-4">
+              <p class="text-p-color">C2</p>
+              <p class="text-p-color">Economy</p>
+              <p class="text-p-color">550</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="font-bold">Total Price</p>
+              <p class="font-bold">BDT <span>1100</span></p>
+            </div>
+            <div class="flex justify-between">
+              <input class="w-[300px] h-[56px] pl-2 border-none rounded-xl" type="text" placeholder="Have any coupon?">
+              <button class="btn bg-text-color text-white font-bold">Apply</button>
+            </div>
+            <div class="flex justify-between mt-4">
+              <p>Grand Total</p>
+              <p>BDT <span>1100</span></p>
+            </div>
+          </div>
+          <!-- info -->
+          <div class="mt-5">
+            <span class="font-bold">Passenger Name*</span><br>
+            <input class="border w-[433px] h-[64px] rounded-xl pl-2 mt-4 mb-4" type="text" placeholder="Enter your name"><br>
+            <span class="font-bold">Phone Number*</span><br>
+            <input class="border w-[433px] h-[64px] rounded-xl pl-2 mt-4 mb-4" type="text" name="" id="" placeholder="Enter your phone number"><br>
+            <span class="font-bold">Emaill ID</span><br>
+            <input class="border w-[433px] h-[64px] rounded-xl pl-2 mt-4 mb-4" type="text" name="" id="" placeholder="Enter your emaill id">
+            <button class="btn bg-text-color w-[433px] text-white font-bold">Next</button>
+            <div class="flex gap-14 mt-5">
+              <p class="text-p-color border-b-2">Terms and Conditions</p>
+              <p class="text-p-color border-b-2">Cancellation policy</p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
        </section>
     </main>
-    <footer>
-
+    <footer class="bg-black h-[457px] p-20">
+       <div class="flex justify-between border-b-2 border-dashed border-gray-600 pb-10">
+        <div>
+          <h1 class="text-4xl text-white mb-5">P-Ticket</h1>
+          <p class="text-gray-400">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+        </div>
+        <div>
+          <p class="text-gray-400 mb-5">Download our app</p>
+          <img class="shadow-inner shadow-black" src="images/google.jpg.jpg" alt="">
+        </div>
+       </div>
+       <div class="flex justify-between mt-14">
+        <div class="text-gray-400">@all rights reserved, P-Ticket services limited.2024</div>
+        <div class="flex justify-between gap-4">
+          <p class="text-gray-400 font-bold">Terms & Condition</p>
+          <p class="text-gray-400 font-bold">Return & refund policy</p>
+          <p class="text-gray-400 font-bold">Privacy policy</p>
+        </div>
+       </div>
     </footer>
 </body>
 </html>
