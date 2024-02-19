@@ -34,6 +34,20 @@
         .font-poppins{
             font-family: 'Poppins', sans-serif;
         }
+        .seat{
+          color: rgba(3, 7, 18, 0.5);
+        }
+        .seat-code{
+          color: rgba(3, 7, 18, 0.5);
+        }
+        li{
+          display: flex;
+          gap: 20px;
+          margin: auto;
+          text-align: center;
+          list-style: none;
+          color:rgba(3, 7, 18, 0.6);
+        }
     </style>
     
       
@@ -41,7 +55,7 @@
 
 </head>
 <body>
-    <header class="md:container md:mx-auto">
+    <header id="header-section" class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
             <div class="flex-1">
               <a class="btn btn-ghost text-3xl font-bold">P-Ticket </a>
@@ -66,14 +80,14 @@
                 <h1 class="mb-5 text-7xl font-bold">End-to-End Travel with 
                     <br><span class="text-7xl font-bold text-text-color">P Paribahan</span></h1>
                 <p class="mb-5">Are you planning to go on a tour to Kuakata or Cox’s Bazar? Are you tired of getting the bus tickets from the counter and want a smooth website to purchase tickets online? Through its platform P-Paribohon is giving you the best operator, Shohagh Paribahan Limited, with comfortable bus seats and a luxurious environment.</p>
-                <button class="btn bg-text-color px-6 border-text-color text-black font-bold">Buy Tickes</button>
+                <button onclick="getTticketSection()" id="buy-ticket" class="btn bg-text-color px-6 border-text-color text-black font-bold">Buy Tickes</button>
               </div>
             </div>
           </div>
     </header>
-    <main class="">
+    <main id="ticket-info">
         <!-- Coupon section -->
-       <section class="md:container md:mx-auto my-20 items-center">
+       <section id="hide-section" class="md:container md:mx-auto my-20 items-center">
         <h1 class="text-4xl font-bold text-center mb-10">Best offers for you</h1>
         <div class="flex justify-center gap-10">
             <!-- Coupon 1 -->
@@ -98,7 +112,7 @@
                 </div>
                 <div><img src="images/cupon-devider.png" alt=""></div>
                 <div class="pr-8 py-14 text-center">
-                    <h3 class="text-3xl font-bold">Couple20</h3>
+                    <h3 class="text-3xl font-bold">Couple 20</h3>
                     <p>Coupon Code</p>
                 </div>
             </div>
@@ -108,7 +122,7 @@
         </div>
        </section> 
        <!-- Tickets section -->
-       <section class="bg-ticket-section border-t-4 border-text-color rounded-t-lg ">
+       <section id="ticket-section" class="bg-ticket-section border-t-4 border-text-color rounded-t-lg">
         <!-- Tickets Price and Boarding point -->
         <div class="text-center mb-10">
             <h1 class="text-4xl font-bold mb-5 pt-10">P.H Paribahan</h1>
@@ -128,7 +142,7 @@
                        </div>
                     </div>
                     <div class="w-[150px] h-[45px] py-2 border rounded-xl flex bg-[#1cd1001f] text-text-color gap-1 justify-center"><img class="w-[21px] h-[21px]" src="images/seat-green.png" alt="">
-                        <span>40</span> Seats left</div>
+                        <span id="seat-left">40</span> Seats left</div>
                 </div> 
                 <!-- timeTable -->
                 <div class="w-[800px] h-[200px] bg-info p-[32px] rounded-xl">
@@ -153,14 +167,14 @@
               </div>
               <!-- Ticket Price -->
               <div class="mx-20 my-20">
-                <img class="" src="images/fare.png" alt="">
+                <img src="images/fare.png" alt="">
                 <h1 class="text-4xl font-bold"><span>550</span> Taka</h1>
                 <p class="text-p-color">Per Seat</p>
               </div>
         </div>
         <!-- Tickes -->
         <div class="md:container md:mx-auto bg-white mt-10 flex gap-14">
-          <div class="w-[664px] h-[1056px] px-5 py-5 border-r-2 border-dashed">
+          <div class="w-[664px] h-[1000px] px-5 py-5 border-r-2 border-dashed">
             <h1 class="text-xl font-bold border-b-2 border-dashed mb-4 pb-4">Select Your Seat</h1>
           <div class="flex justify-between">
             <div class="flex gap-2">
@@ -179,109 +193,107 @@
             </div>
             <div class="">
               <div class="flex justify-between mb-4">
-                <p>A</p>
-                <button class="btn">A1</button>
-                <button class="btn">A2</button>
-                <button class="btn">A3</button>
-                <button class="btn">A4</button>
+                <p class="seat-code">A</p>
+                <div><button class="btn seat">A1</button></div>
+                <div><button class="btn seat">A2</button></div>
+                <div><button class="btn seat">A3</button></div>
+                <div><button class="btn seat">A4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>B</p>
-                <button class="btn">B1</button>
-                <button class="btn">B2</button>
-                <button class="btn">B3</button>
-                <button class="btn">B4</button>
+                <p class="seat-code">B</p>
+                <div><button class="btn seat">B1</button></div>
+                <div><button class="btn seat">B2</button></div>
+                <div><button class="btn seat">B3</button></div>
+                <div><button class="btn seat">B4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>C</p>
-                <button class="btn">C1</button>
-                <button class="btn">C2</button>
-                <button class="btn">C3</button>
-                <button class="btn">C4</button>
+                <p class="seat-code">C</p>
+                <div><button class="btn seat">C1</button></div>
+                <div><button class="btn seat">C2</button></div>
+                <div><button class="btn seat">C3</button></div>
+                <div><button class="btn seat">C4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>D</p>
-                <button class="btn">D1</button>
-                <button class="btn">D2</button>
-                <button class="btn">D3</button>
-                <button class="btn">D4</button>
+                <p class="seat-code">D</p>
+                <div><button class="btn seat">D1</button></div>
+                <div><button class="btn seat">D2</button></div>
+                <div><button class="btn seat">D3</button></div>
+                <div><button class="btn seat">D4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>E</p>
-                <button class="btn">E1</button>
-                <button class="btn">E2</button>
-                <button class="btn">E3</button>
-                <button class="btn">E4</button>
+                <p class="seat-code">E</p>
+                <div><button class="btn seat">E1</button></div>
+                <div><button class="btn seat">E2</button></div>
+                <div><button class="btn seat">E3</button></div>
+                <div><button class="btn seat">E4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>F</p>
-                <button class="btn">F1</button>
-                <button class="btn">F2</button>
-                <button class="btn">F3</button>
-                <button class="btn">F4</button>
+                <p class="seat-code">F</p>
+                <div><button class="btn seat">F1</button></div>
+                <div><button class="btn seat">F2</button></div>
+                <div><button class="btn seat">F3</button></div>
+                <div><button class="btn seat">F4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>G</p>
-                <button class="btn">G1</button>
-                <button class="btn">G2</button>
-                <button class="btn">G3</button>
-                <button class="btn">G4</button>
+                <p class="seat-code">G</p>
+                <div><button class="btn seat">G1</button></div>
+                <div><button class="btn seat">G2</button></div>
+                <div><button class="btn seat">G3</button></div>
+                <div><button class="btn seat">G4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>H</p>
-                <button class="btn">H1</button>
-                <button class="btn">H2</button>
-                <button class="btn">H3</button>
-                <button class="btn">H4</button>
+                <p class="seat-code">H</p>
+                <div><button class="btn seat">H1</button></div>
+                <div><button class="btn seat">H2</button></div>
+                <div><button class="btn seat">H3</button></div>
+                <div><button class="btn seat">H4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>I</p>
-                <button class="btn">I1</button>
-                <button class="btn">I2</button>
-                <button class="btn">I3</button>
-                <button class="btn">I4</button>
+                <p class="seat-code">I</p>
+                <div><button class="btn seat">I1</button></div>
+                <div><button class="btn seat">I2</button></div>
+                <div><button class="btn seat">I3</button></div>
+                <div><button class="btn seat">I4</button></div>
               </div>
               <div class="flex justify-between mb-4">
-                <p>J</p>
-                <button class="btn">J1</button>
-                <button class="btn">J2</button>
-                <button class="btn">J3</button>
-                <button class="btn">J4</button>
+                <p class="seat-code">J</p>
+                <div><button class="btn seat">J1</button></div>
+                <div><button class="btn seat">J2</button></div>
+                <div><button class="btn seat">J3</button></div>
+                <div><button class="btn seat">J4</button></div>
               </div>
+              
+              <!-- Seat End -->
             </div>
           </div>
         </div> 
-          <!-- Seat End -->
           <!-- total price -->
           <div class="w-[497px] pt-5">
             <h1 class="text-xl font-bold border-b-2 border-dashed pb-4">Select Your Seat</h1>
           <div class="w-[433px] h-[335px] px-5 py-5  bg-info mt-5">
             <div class="flex justify-between border-b-2 border-dashed p-4">
-              <p class="font-bold">Seat <span class="bg-text-color text-white">0</span></p>
+              <p class="font-bold">Seat <span id="count-seat" class="bg-text-color text-white">0</span></p>
               <p class="font-bold">Class</p>
               <p class="font-bold">Price</p>
             </div>
-            <div class="flex justify-between">
-              <p class="text-p-color">C2</p>
-              <p class="text-p-color">Economy</p>
-              <p class="text-p-color">550</p>
+            <!-- append -->
+             <ul id="seleted-place-container"
+             class="seleted-place-container">
+              </ul>
+             <hr/>
+             <!-- append end -->
+             <div class="flex justify-between mt-4">
+              <p class="font-bold">Total</p>
+              <p class="font-bold">BDT <span id="total-cost" class="font-bold">0</span></p>
             </div>
-            <div class="flex justify-between border-b-2 pb-4">
-              <p class="text-p-color">C2</p>
-              <p class="text-p-color">Economy</p>
-              <p class="text-p-color">550</p>
-            </div>
-            <div class="flex justify-between">
-              <p class="font-bold">Total Price</p>
-              <p class="font-bold">BDT <span>1100</span></p>
-            </div>
-            <div class="flex justify-between">
-              <input class="w-[300px] h-[56px] pl-2 border-none rounded-xl" type="text" placeholder="Have any coupon?">
-              <button class="btn bg-text-color text-white font-bold">Apply</button>
+            <!-- delete item -->
+            <div id="delete-item" class="flex justify-between">
+              <input id="coupon-confirm" class="w-[300px] h-[56px] pl-2 border-none rounded-xl" type="text" placeholder="Have any coupon?">
+              <button id="delete-button" class="btn bg-text-color text-white font-bold" disabled>Apply</button>
             </div>
             <div class="flex justify-between mt-4">
-              <p>Grand Total</p>
-              <p>BDT <span>1100</span></p>
+              <p class="font-bold">Grand Total</p>
+              <p class="font-bold">BDT <span id="grand-total" class="font-bold">0</span></p>
             </div>
           </div>
           <!-- info -->
@@ -292,7 +304,7 @@
             <input class="border w-[433px] h-[64px] rounded-xl pl-2 mt-4 mb-4" type="text" name="" id="" placeholder="Enter your phone number"><br>
             <span class="font-bold">Emaill ID</span><br>
             <input class="border w-[433px] h-[64px] rounded-xl pl-2 mt-4 mb-4" type="text" name="" id="" placeholder="Enter your emaill id">
-            <button class="btn bg-text-color w-[433px] text-white font-bold">Next</button>
+            <button onclick="sectionHide()" id="btn-next" class="btn bg-text-color w-[433px] text-white font-bold">Next</button>
             <div class="flex gap-14 mt-5">
               <p class="text-p-color border-b-2">Terms and Conditions</p>
               <p class="text-p-color border-b-2">Cancellation policy</p>
@@ -302,8 +314,27 @@
           </div>
         </div>
        </section>
+       <!-- confirmation notification -->
+       <section id="confirm-msg" class="px-[360px] py-[188px] bg-ticket-section hidden">
+          <div class="w-[718px] h-[481px] border-2 border-dashed bg-white">
+            <div class="w-[100px] justify-center">
+              <img class="w-[100px] h-[97px] mt-10 mx-[300px] border-2 border-dashed" src="images/success.png" alt="">
+            </div>
+            <div class="w-[631px] h-[49px] border-2 border-dashed mt-10 mb-10 mx-5">
+              <h1 class="text-4xl text-text-color font-bold text-center">SUCCESS</h1>
+            </div>
+            <div class="w-[561px] h-[92px] border-2 border-dashed mx-[73px] mb-5">
+              <p class="font-bold">Thank you for Booking our Bus seats. <br>
+                We are working hard to find the best service and deals for you.</p>
+                <p class="text-p-color">Shortly you will find a comfirmation in your emaill.</p>
+            </div>
+            <div class="w-[300px] h-[55px] border-2 border-dashed mx-[185px]">
+              <button class="btn bg-text-color text-white w-[300px] h-[55px] border-none text-xl rounded-full">Continue</button>
+            </div>
+          </div>
+       </section>
     </main>
-    <footer class="bg-black h-[457px] p-20">
+    <footer id="footer-section" class="bg-black h-[457px] p-20">
        <div class="flex justify-between border-b-2 border-dashed border-gray-600 pb-10">
         <div>
           <h1 class="text-4xl text-white mb-5">P-Ticket</h1>
@@ -323,5 +354,7 @@
         </div>
        </div>
     </footer>
+    <!-- Scripts File -->
+    <script src="scripts/ticketing.js"></script>
 </body>
 </html>
